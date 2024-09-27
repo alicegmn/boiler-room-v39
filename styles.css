@@ -31,7 +31,7 @@ ul {
   background-color: var(--accent);
   padding: 5px 0;
   color: var(--main);
-  width: 100vw;
+  width: 100%;
   z-index: 100;
 }
 
