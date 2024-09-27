@@ -41,7 +41,7 @@
   .galText:hover {
     transition: .5s;
     opacity: 100%  ;
-    background-color: rgba(0, 0, 0, 0.347);
+    background-color: rgba(0, 0, 0, 0.82);
   }
 
 /* Grid Two */
@@ -171,6 +171,22 @@
 
     .item4 {
       grid-area: 5 / 1 / 4 / 5;
+    }
+
+    .item6 {
+      grid-area: 2 / 1 / 4 / 5 ;
+    }
+
+    .item8 {
+      grid-area: 4 / 1 / 4 / 5;
+    }
+
+    .item9 {
+      grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .item10 {
+      display: none;
     }
 
   }
