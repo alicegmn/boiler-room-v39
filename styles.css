@@ -63,6 +63,7 @@ ul {
   align-items: center;
   gap: clamp(5px, 7px, 10px);
 }
+
 .footerImageContainer {
   display: flex;
   justify-content: center;
