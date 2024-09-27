@@ -1,5 +1,29 @@
-img {
-    width: clamp(5rem, 30%, 20rem);
-    height: clamp(3rem, 40%, 15rem)
-    object-fit:
+body {
+justify-content: center;
+align-items: center;
+display: grid;
+grid-area: ;
+}
+
+#intro {
+    #gruppbild {
+        width: clamp(50px, 70%, 1200px);
+        height: auto;
+        border-radius: 5%;
+    }
+}
+
+#redaktionenWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    img {
+        /*width: clamp(5rem, 30%, 20rem);*/
+        /* height: clamp(3rem, 40%, 15rem);*/
+        height: 200px;
+        width: 200px;
+        object-fit:cover;
+        border-radius: 999px;
+    }
 }
