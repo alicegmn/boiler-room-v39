@@ -8,4 +8,39 @@ body {
   --secondary: #d4bf7f;
   --secondaryLight: #f3dda5;
   --accent: #d1ad78;
+  background-color: var(--main);
+  color: var(--secondary);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--accent);
+  padding: 5px 0;
+  color: var(--main);
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 7px;
+  color: inherit;
+}
+
+a:hover {
+  background-color: var(--main);
+  color: var(--accent);
 }
