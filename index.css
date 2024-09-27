@@ -8,6 +8,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   width: 100%;
+  margin: 3rem 0rem;
 }
 
 .card1,
@@ -28,12 +29,24 @@ img {
 }
 
 .card-grid p {
-  margin: 5% 5%;
-  font-size: clamp(0.8rem, 1rem, 1.1rem);
+  margin: auto 10%;
+  font-size: clamp(0.7rem, 2vw, 1rem);
 }
 
-.card-grid button {
-  margin: 5%;
+.card-grid h3 {
+  margin: auto 10%;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex button {
+  align-self: center;
+  margin-bottom: 0.5rem;
 }
 
 /* Big screen  */
@@ -50,6 +63,10 @@ img {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
   }
+
+  .card3 img {
+    width: 90%;
+  }
 }
 /* Small screen  */
 @media (max-width: 480px) {
@@ -59,5 +76,10 @@ img {
   .card3 {
     grid-column: 1;
     grid-row: 3;
+  }
+
+  .card3 img {
+    height: 100px;
+    width: 90%;
   }
 }

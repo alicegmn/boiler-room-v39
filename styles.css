@@ -43,15 +43,3 @@ body {
   align-items: center;
   list-style-type: none;
 }
-
-a {
-  text-decoration: none;
-  padding: 3px 6px;
-  border-radius: 7px;
-  color: inherit;
-}
-
-a:hover {
-  background-color: var(--main);
-  color: var(--accent);
-}
