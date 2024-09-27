@@ -141,11 +141,8 @@
     opacity: 5%;
   }
 
-  @media screen and (max-width: 588px) {
+  @media screen and (max-width: 768px) {
 
-    .grid-containerOne .grid-containerTwo {
-        gap: 0px;
-    }
     
     .item1 {
       display: none;
@@ -187,11 +184,11 @@
       grid-area: 1 / 1 / 2 / 5 ;
     }
 
-    .item3 {
+    .item5 {
       display: none;
     }
 
-    .item5 {
+    .item3 {
       grid-area: 2 / 1 / 4 / 5 ;
     }
 
