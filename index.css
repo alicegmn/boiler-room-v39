@@ -26,27 +26,41 @@ img {
   margin: 5% 5%;
   border-radius: 1rem;
   object-fit: cover;
+  opacity: 80%;
+}
+
+img:hover {
+  opacity: 100%;
 }
 
 .card-grid p {
-  margin: auto 10%;
+  margin: 1rem 10% auto 10%;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+.container button {
+  padding: clamp(0.7rem, 2vw, 1rem);
+}
+
+button a {
   font-size: clamp(0.7rem, 2vw, 1rem);
 }
 
 .card-grid h3 {
-  margin: auto 10%;
+  margin: 0 10%;
   font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .flex {
+  height: clamp(8rem, 22rem, 35rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .flex button {
   align-self: center;
-  margin-bottom: 0.5rem;
+  margin: 5%;
 }
 
 /* Big screen  */
@@ -57,6 +71,10 @@ img {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 2fr);
+  }
+
+  .flex {
+    height: clamp(8rem, 15rem, 35rem);
   }
 
   .card3 {
@@ -72,6 +90,10 @@ img {
 @media (max-width: 480px) {
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .flex {
+    height: clamp(8rem, 15rem, 35rem);
   }
   .card3 {
     grid-column: 1;
