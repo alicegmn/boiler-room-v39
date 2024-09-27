@@ -1,0 +1,56 @@
+:root {
+  --main: #424f37;
+  --lightMain: #818c5f;
+  --secondary: #d4bf7f;
+  --secondaryLight: #f3dda5;
+  --accent: #d1ad78;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--secondary);
+}
+
+/* add container div as a parent to get margin for the children on the sides */
+.container {
+  margin: 0 10vw;
+}
+
+h1 {
+  color: var(--main);
+  font-size: 2rem;
+}
+
+h2 {
+  color: var(--main);
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: var(--main);
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--lightMain);
+  font-size: 1rem;
+}
+
+button {
+  appearance: none;
+  background-color: var(--secondaryLight);
+  border: none;
+  border-radius: 999rem;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--mainLight);
+  opacity: 80%;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  opacity: 100%;
+}
