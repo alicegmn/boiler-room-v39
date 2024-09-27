@@ -12,6 +12,10 @@ body {
   color: var(--secondary);
 }
 
+ul {
+  padding: 0;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -42,16 +46,4 @@ body {
   gap: 10px;
   align-items: center;
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  padding: 3px 6px;
-  border-radius: 7px;
-  color: inherit;
-}
-
-a:hover {
-  background-color: var(--main);
-  color: var(--accent);
 }
