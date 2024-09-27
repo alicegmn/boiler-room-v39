@@ -13,4 +13,4 @@ Rhiannon:
 - used aria-labels as alt-text for images
 - used clamp() for the text overlay 
 - used overlay to make the text easier to read by increasing the contrast between text and background 
-- used media queries to remove some of the images when the screen becomes smaller 
+- used media queries to remove some of the images when the screen becomes smaller
