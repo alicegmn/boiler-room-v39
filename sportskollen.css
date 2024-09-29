@@ -34,6 +34,8 @@ aside {
     flex-direction: column;
     padding: 5px;
     background-color: #222;
+    color: navajowhite;
+    margin: 0.5rem;
 }
 
 .kategory {
@@ -49,6 +51,17 @@ aside {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: navajowhite;
+}
+
+.kategoryland {
+    font-weight: 700;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: navajowhite;
+
 }
 
 .match {
@@ -79,6 +92,8 @@ aside {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: navajowhite;
+
 }
 
 nav {
@@ -225,7 +240,7 @@ a {
         font-size: 16px;
     }
 
-    .hammalagnamn, .bortalagnamn {
+    .hemmalagnamn, .bortalagnamn {
         font-size: 12px;
     }
 
