@@ -1,0 +1,156 @@
+:root {
+    --main: #424f37;
+    --lightMain: #818c5f;
+    --secondary: #d4bf7f;
+    --secondaryLight: #f3dda5;
+    --accent: #d1ad78;
+  }
+
+  body {
+    background-color: var(--main);
+  }
+
+/* Wrapper för main och aside */
+#grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* En kolumn på små skärmar */
+    grid-template-areas: 
+        "main"
+        "aside"; /* Placerar aside under main på små skärmar */
+    gap: 20px; /* Avstånd mellan main och aside */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid area för main */
+main {
+    grid-area: main;
+}
+
+/* Grid area och styling för aside */
+aside {
+    grid-area: aside;
+    background-color: var(--lightMain);
+    padding: 20px;
+    padding-top: 0;
+}
+
+aside h2{
+    color: var(--main);
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+aside a {
+    background-color: var(--main);
+    color: #fff;
+}
+
+aside a:hover {
+    background-color: #fff;
+    color: var(--main);
+}
+
+p {
+    color: #fff;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+
+/* Centrerar och justerar storleken på h1 med clamp */
+h1 {
+    color: var(--secondaryLight);
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: clamp(2.5rem, 6vw, 5rem); /* Större än h2 men växer och krymper med samma logik */
+}
+
+/* Centrerar och justerar storleken på h2 med clamp */
+h2 {
+    color: var(--secondary);
+    padding: 1rem 0;
+    margin-bottom: 0 rem;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem); /* Mindre än h1 men växer och krymper med samma logik */
+}
+
+h3 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: var(--secondary);
+}
+
+/* Wrapper för hela första sektionen */
+#intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centrerar h1 och bilden horisontellt */
+    padding: 20px; /* Padding runt hela sektionen för att ge lite utrymme */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrerar sektionen horisontellt */
+}
+
+/* Bild på teamet */
+#gruppbild {
+    width: clamp(50%, 90vw, 90%);
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Vänsterställa paragrafen och begränsa dess bredd till bildens bredd */
+#intro-section p {
+    padding: 10px 0;
+    text-align: left; /* Vänsterställer texten */
+    width: clamp(50%, 90vw, 90%); /* Samma bredd som bilden */
+    margin: 0 auto; /* Centrerar paragrafblocket horisontellt så att det matchar bildens bredd */
+}
+
+/* Wrapper för teamsektionen */
+#team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 20px 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stil för varje teammedlem */
+#team-section div {
+    text-align: center;
+    margin: 0.5rem;
+    flex: 1 1 clamp(200px, 20vw, 300px); /* Flexibel bredd som matchar bildens storlek */
+}
+
+/* Bilder på teammedlemmar */
+#team-section img {
+    width: clamp(180px, 15vw, 300px); /* Minsta storlek: 100px, Växer med skärmen, Största storlek: 200px */
+    height: clamp(180px, 15vw, 300px); /* Samma som bredden för att behålla proportionerna */
+    border-radius: 50%; /* Gör bilderna runda */
+    object-fit: cover; /* Se till att bilderna alltid fyller upp cirkeln */
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    #grid-wrapper {
+        grid-template-columns: 3fr 1fr; /* Två kolumner: 2/3 till main, 1/3 till aside */
+        grid-template-areas: 
+            "main aside"; /* Placerar aside till höger om main på större skärmar */
+    }
+
+    aside {
+        position: fixed;
+        border-radius: 15px 0 0 15px;
+        bottom: 20%;
+        right: 0;
+        width: 25%;
+        padding: 20px;
+        text-align: left;
+        }
+
+    aside h2 {
+        font-size: clamp(1rem, 3vw, 2rem);
+        text-align: left;
+    }
+}
