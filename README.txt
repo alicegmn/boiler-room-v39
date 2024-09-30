@@ -38,4 +38,14 @@ Rhiannon:
 - used overlay to make the text easier to read by increasing the contrast between text and background 
 - used media queries to remove some of the images when the screen becomes smaller
 
-Alice:
+Alice
+– Vi började fredagen med ett uppstartsmöte kl 9.00 där vi satte ramarna för projektet och satte en struktur för vår trellobräda och la in våra första uppgifter i backloggen. Vi delade upp uppgifter/roller/ansvarsområden.
+Detta var särskilt bra för mig som inte kunde delta under förmiddagen då jag var på resande fot, jag kunde enkelt följa gruppens tankegångar i vår trello.
+– Sedan hade vi en standup igen kl 10.30 då jag fick en ordentlig förståelse för vad de bestämt tidigare under morgonen och de andra uppdaterade om hur det hade gått hittills. Sedan fortsatte vi (alla utom jag) jobba tills vi möttes kl 13.00 på scandic och jag var med på länk. Vi körde återkommande standups under eftermiddagen för att stämma av hur det gick.
+– Klockan 13.00 kunde jag sätta igång arbetet med att koda,vilket var att skapa en “about page” för den webbplats som vi skulle ta fram som var inriktad på fotboll. Jag valde att presentera redaktionen som jobbar med plattformen samt en annons om att de (vi) söker medarbetare.
+– Först satte jag html-strukturen med semantiska och icke-semantiska element.
+– Sedan vill jag göra sidan responsiv, helst utan att använda media queries
+– Jag började att göra en gridstruktur och lite andra lösningar som jag inte blev nöjd med. Då bestämde jag mig för att skriva väldigt detaljerade prompts till chatgpt istället och tog hjälp den vägen.
+– Det var ett arbetssätt som också gjorde att jag lärde mig sådant som jag inte hade lärt mig lika snabbt utan ai.
+– Jag avslutade med att göra tillgänglighetsanalyser med Wave och Lighthouse för att se om jag missat något WCAG-krav.
+– Sedan fick jag lite tid över så jag testade runt med lite interaktiva effekter med transition och 
