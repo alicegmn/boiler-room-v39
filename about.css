@@ -1,5 +1,0 @@
-img {
-    width: clamp(5rem, 30%, 20rem);
-    height: clamp(3rem, 40%, 15rem)
-    object-fit:
-}
