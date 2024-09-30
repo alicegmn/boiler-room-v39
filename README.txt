@@ -23,6 +23,8 @@ Vid fel: Ett felmeddelande visas, t.ex. att vissa fält saknar korrekt data elle
 
 -----
 
+Trelloboard: https://trello.com/invite/b/66f511ee4ad210270516f979/ATTIf11d2426d8eedd61b3f1a8067df43c85DFDA694A/boiler-room-v39
+
 DOKUMENTATION:
 - Mycket fika och gött snack i gruppen!
 
