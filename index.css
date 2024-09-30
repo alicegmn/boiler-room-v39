@@ -1,6 +1,18 @@
+:root {
+  --main: #424f37;
+  --lightMain: #818c5f;
+  --secondary: #d4bf7f;
+  --secondaryLight: #f3dda5;
+  --accent: #d1ad78;
+}
+
 a {
   text-decoration: none;
   color: var(--mainLight);
+}
+
+p {
+  color: var(--secondary);
 }
 
 .card-grid {
