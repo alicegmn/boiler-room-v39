@@ -22,7 +22,7 @@ main {
 /* Grid area och styling för aside */
 aside {
     grid-area: aside;
-    background-color: var(--lightMain);
+    background-color: var(--secondaryLight);
     padding: 20px;
     padding-top: 0;
 }
@@ -44,6 +44,11 @@ aside a:hover {
     color: var(--main);
 }
 
+aside p {
+    color: var(--main);
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+
 p {
     color: #fff;
     font-size: clamp(0.8rem, 2vw, 1.5rem);
@@ -60,7 +65,7 @@ h1 {
 
 /* Centrerar och justerar storleken på h2 med clamp */
 h2 {
-    color: var(--secondary);
+    color: var(--secondaryLight);
     padding: 1rem 0;
     margin-bottom: 0 rem;
     text-align: center;
