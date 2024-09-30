@@ -1,259 +1,249 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 main {
-    display: flex;
-    margin: 1rem;
-    padding: 3rem;
-    scrollbar-width: none;
-    border-radius: 10px;
+  display: flex;
+  margin: 1rem;
+  padding: 3rem;
+  scrollbar-width: none;
+  border-radius: 10px;
 }
 
 .maincolumn {
-    display: flex;
-    float: left;
-    flex: 1;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  float: left;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
 }
 
 aside {
-    flex: 0 0 200px;
-    padding: 10px;
-    margin-right: 20px;
-    border-radius: 8px;
-    background-color: #870101;
+  flex: 0 0 200px;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: #870101;
 }
 
 .tabell {
-    border: 1px solid #222;
-    border-radius: 8px;
-    flex-direction: column;
-    padding: 5px;
-    background-color: #222;
-    color: navajowhite;
-    margin: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 8px;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #222;
+  color: navajowhite;
+  margin: 0.5rem;
 }
 
 .kategory {
-    font-size: 14px;
-    padding: 10px 15px;
-    background-color: #222;
-    flex: 1;
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: #222;
+  flex: 1;
 }
 
 .kategoryliga {
-    font-weight: 700;
-    margin-bottom: 2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: navajowhite;
+  font-weight: 700;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: navajowhite;
 }
 
 .kategoryland {
-    font-weight: 700;
-    margin-bottom: 2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: navajowhite;
-
+  font-weight: 700;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: navajowhite;
 }
 
 .match {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    padding: 10px;
-    background-color: darkred;
-    border-radius: 15.5px;
-    margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  background-color: darkred;
+  border-radius: 15.5px;
+  margin: 10px;
 }
 
 .boll {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
 
-.hemmalag, .bortalag {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    margin-bottom: 5px;
-    letter-spacing: 0.41px;
+.hemmalag,
+.bortalag {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 5px;
+  letter-spacing: 0.41px;
 }
 
-.hemmalagnamn, .bortalagnamn {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: navajowhite;
-
+.hemmalagnamn,
+.bortalagnamn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: navajowhite;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 300px; 
-    overflow-x: auto;
-    scrollbar-width: none;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 300px;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
-
 
 nav::-webkit-scrollbar {
-    display: none;
-}
-
-a {
-    border: 1px solid #222;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    margin: 0 5px;
-    flex: 0 0 auto;
+  display: none;
 }
 
 .headerf1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #222;
-    border-bottom: 1px solid #444;
-    flex-flow: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--accent);
+  border-bottom: 1px solid #444;
+  flex-flow: column;
 }
-
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
 }
 
-
 .bild {
-    color: transparent;
-    display: flex;
-    margin-right: 10px;
+  color: transparent;
+  display: flex;
+  margin-right: 10px;
 }
 
 @media (max-width: 1024px) {
-    nav {
-        padding: 0 50px;
-    }
+  nav {
+    padding: 0 50px;
+  }
 
-    aside {
-        display: none; 
-    }
+  aside {
+    display: none;
+  }
 
-    .menu {
-        justify-content: center;
-    }
+  .menu {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        padding: 1rem;
-    }
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-    .match {
-        font-size: 12px;
-        padding: 8px;
-        margin: 8px;
-    }
+  .match {
+    font-size: 12px;
+    padding: 8px;
+    margin: 8px;
+  }
 
-    .boll {
-        flex-direction: column;
-        text-align: center;
-    }
+  .boll {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hemmalag img, .bortalag img {
-        width: 40px;
-        height: 40px;
-    }
+  .hemmalag img,
+  .bortalag img {
+    width: 40px;
+    height: 40px;
+  }
 
-    nav {
-        padding: 0;
-        justify-content: flex-start;
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
+  nav {
+    padding: 0;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
 
-    a {
-        margin: 5px;
-        padding: 8px;
-    }
+  a {
+    margin: 5px;
+    padding: 8px;
+  }
 
-    header {
-        flex-direction: column;
-    }
+  header {
+    flex-direction: column;
+  }
 
-    .menu {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
-    nav {
-        padding: 0;
-        justify-content: flex-start;
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
+  nav {
+    padding: 0;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
 
-    a {
-        flex: 0 0 auto;
-        margin: 5px;
-        padding: 7px;
-    }
+  a {
+    flex: 0 0 auto;
+    margin: 5px;
+    padding: 7px;
+  }
 
-    .match {
-        font-size: 12px;
-        padding: 6px;
-    }
+  .match {
+    font-size: 12px;
+    padding: 6px;
+  }
 
-    .hemmalag img, .bortalag img {
-        width: 35px;
-        height: 35px;
-    }
+  .hemmalag img,
+  .bortalag img {
+    width: 35px;
+    height: 35px;
+  }
 
-    .kategory, .tabell {
-        font-size: 12px;
-        padding: 5px;
-    }
+  .kategory,
+  .tabell {
+    font-size: 12px;
+    padding: 5px;
+  }
 
-    .kategoryliga {
-        font-size: 16px;
-    }
+  .kategoryliga {
+    font-size: 16px;
+  }
 
-    .hemmalagnamn, .bortalagnamn {
-        font-size: 12px;
-    }
+  .hemmalagnamn,
+  .bortalagnamn {
+    font-size: 12px;
+  }
 
-    header {
-        flex-direction: column;
-        padding: 10px 5px;
-    }
+  header {
+    flex-direction: column;
+    padding: 10px 5px;
+  }
 
-    .menu h1 {
-        font-size: 1.5em;
-    }
+  .menu h1 {
+    font-size: 1.5em;
+  }
 
-    .menu {
-        padding: 10px;
-    }
+  .menu {
+    padding: 10px;
+  }
 }
