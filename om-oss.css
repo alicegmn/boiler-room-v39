@@ -139,13 +139,15 @@ h3 {
     }
 
     aside {
+        z-index: 101;
         position: fixed;
         border-radius: 15px 0 0 15px;
-        bottom: 20%;
+        bottom: 30%;
         right: 0;
         width: 25%;
         padding: 20px;
         text-align: left;
+
         }
 
     aside h2 {
