@@ -1,12 +1,4 @@
-:root {
-    --main: #424f37;
-    --lightMain: #818c5f;
-    --secondary: #d4bf7f;
-    --secondaryLight: #f3dda5;
-    --accent: #d1ad78;
-  }
-
-  body {
+body {
     background-color: var(--main);
   }
 
@@ -130,6 +122,13 @@ h3 {
     border-radius: 50%; /* Gör bilderna runda */
     object-fit: cover; /* Se till att bilderna alltid fyller upp cirkeln */
     margin-bottom: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smidig övergång vid transform och skugga */
+}
+
+/* Hover-effekt för att zooma in och lägga till skugga */
+#team-section img:hover {
+    transform: scale(1.5) rotate(360deg); /* Zoomar in och roterar lite vid hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lägger till en djupare skugga vid hover */
 }
 
 @media (min-width: 768px) {
