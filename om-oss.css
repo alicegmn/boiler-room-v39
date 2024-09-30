@@ -45,7 +45,7 @@ aside p {
     font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
 
-p {
+main p {
     color: #fff;
     font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
