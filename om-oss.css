@@ -1,7 +1,3 @@
-body {
-    background-color: var(--main);
-  }
-
 /* Wrapper för main och aside */
 #grid-wrapper {
     display: grid;
